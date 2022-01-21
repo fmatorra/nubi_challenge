@@ -3,7 +3,6 @@
 
 ### Guia de Procedimiento
 ### ---------------------
-#### Todos los modelos necesitan ser entrendados con los datos presentes.
 
 * 1. Detectar el tipo de producto:
         Para ello se realizó un clasificador de textos con la libreria transformes y se hizo un Fine-Tunning de un modelo en español. Los datos se extrajeron de ambos CSV (Celular, TVs). Se utilizaron 3 categorias (Televisión, Celular y Otros), debido a que en el dataset se encontraron publicaciones que no correspondian a una de las dos categorias. Modelo, entrenamiento y datos estan en la carpeta ./transformer_classification. Como algo adicional se realizó un clasificador de textos para detectar si el tipo de televisor era o no Smart.
@@ -15,4 +14,6 @@
 * 4. Flask API:
         Se construyo un microservicio con Flask el mismo se divide cuenta dos tipo de consultas.
         a) Consultar http://127.0.0.1:5000/predict?title= **Acá va el título de una publicación**. Esto devuelve el la inferencia según los diferentes modelos.
-        b) Consultar http://127.0.0.1:5000/report?producto=Televisión devuelve algunos estadísticos del producto o marca consultada.  
+        b) Consultar http://127.0.0.1:5000/report?producto=Televisión devuelve algunos estadísticos del producto o marca consultada.
+        
+## **Todos los modelos necesitan ser entrendados con los datos presentes.** 
