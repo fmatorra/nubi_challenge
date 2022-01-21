@@ -1,8 +1,5 @@
-# nubi_challenge
-Desafio para ingreso a Nubi
-
-## NUBI NLP / ML Engineering Challenge
-## ======================================
+# NUBI NLP / ML Engineering Challenge
+# ======================================
 
 ### Guia de Procedimiento
 ### ---------------------
@@ -16,5 +13,5 @@ Desafio para ingreso a Nubi
         El análisis EDA se dividió en 2 partes, con los datos procesados y sin procesar. Para los datos sin procesar se uso pandas profiling y matplotlib. Para los procesados, se utilizó matplotlib y además se realizó un datastudio para poder hacer una consulta interactiva. Archivos en carpeta ../EDA, datastudio en https://datastudio.google.com/reporting/72957a32-1ecd-45aa-b642-44586bf67d52
 * 4. Flask API:
         Se construyo un microservicio con Flask el mismo se divide cuenta dos tipo de consultas.
-        a) Consultar http://127.0.0.1:5000/predict?title=**Acá va el título de una publicación** Esto devuelve el la inferencia según los diferentes modelos.
+        a) Consultar http://127.0.0.1:5000/predict?title= **Acá va el título de una publicación** Esto devuelve el la inferencia según los diferentes modelos.
         b) Consultar http://127.0.0.1:5000/report?producto=Televisión devuelve algunos estadísticos del producto o marca consultada.  
